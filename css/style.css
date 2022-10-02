@@ -1,3 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
 :root {
   font-size: 62.5%;
   --branco: #fff;
@@ -8,9 +16,15 @@
   --azul: #00095e;
   --azul-escuro: #020625;
 }
+body{
+  background: var(--azul-escuro);
+}
 h1 {
   font-family: 'Exo';
   font-weight: 700;
+}
+a{
+  color: var(--branco);
 }
 p {
   font-family: 'Poppins';
@@ -18,4 +32,45 @@ p {
 }
 strong {
   font-weight: 700;
+}
+.btn-mobile-menu{
+  display:none;
+}
+.btn-verde{
+  background-color: var(--verde-escuro);
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  display: inline-block;
+}
+.btn-verde:hover{
+  transform: scale(0.98);
+  filter: brightness(0.95);
+}
+header{
+  position: fixed;
+  width: 100%;
+  padding: 3rem 1rem 1rem 1rem;
+  transition: 0.5s ;
+}
+header.ativo{
+  background-color: var(--azul-escuro);
+  transition: 0.5s ;
+  padding: 1rem;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav.menu-header ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+header nav.menu-header ul li a{
+  font-family: "Poppins";
+  font-size: 2rem;
 }
