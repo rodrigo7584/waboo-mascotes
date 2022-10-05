@@ -37,7 +37,12 @@ h1 {
 }
 a{
   color: var(--branco);
-  font-size: 2rem;
+  font-size: 2rem; 
+  display: inline-block;
+}
+a:hover{
+  transform: scale(0.98);
+  filter: brightness(0.95);
 }
 p {
   font-family: 'Poppins';
@@ -57,6 +62,9 @@ strong {
   display: flex;
   flex-wrap: wrap;
 }
+.justify-content-center{
+  justify-content: center;
+}
 .col-5{
   width: 41.66666666666667%;
 }
@@ -67,7 +75,7 @@ strong {
   width: 100%;
 }
 .img-fluid{
-  width: 100%;
+  width: 95%;
 }
 .btn-mobile-menu{
   display:none;
@@ -76,11 +84,12 @@ strong {
   background-color: var(--verde-escuro);
   padding: 0.5rem 2rem;
   border-radius: 5rem;
-  display: inline-block;
 }
-.btn-verde:hover{
-  transform: scale(0.98);
-  filter: brightness(0.95);
+.btn-borda-branca{
+  border: 2px solid var(--branco);
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  display: inline-block;
 }
 header{
   position: fixed;
@@ -126,8 +135,117 @@ section.topo p{
   color: var(--branco);
 }
 section.quem-somos{
+  padding-top: 5rem;
   background-color: var(--branco);
 }
+section.quem-somos h1,
+section.quem-somos p{
+  color: var(--azul-escuro);
+}
+section.quem-somos h1{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+section.quem-somos p{
+  margin-bottom: 4rem;
+}
+section.portfolio{
+  background: var(--verde-escuro);
+  background-image: url('../img/bg-balls.png');
+  padding: 5rem 0;
+}
+section.portfolio h1,
+section.portfolio h2,
+section.portfolio h3,
+section.portfolio h4{
+  text-align: center;
+  color: var(--branco)
+}
+section.portfolio .box-cards{
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem 3rem;
+}
+section.portfolio .box-cards .card{
+  display: grid;
+
+}
+section.portfolio .box-cards .card h3{
+  font-size: 2.5rem;
+}
+section.portfolio .box-cards .card .imagem{
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+   width: 300px;
+  height: 330px;
+  border:5px solid var(--branco);
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(180deg,var(--branco),var(--cinza));
+  margin-bottom: 1rem;
+}
+section.portfolio .box-cards .card .imagem img{
+  max-width: 100%;
+  max-height: 100%;
+}
+section.feedback h1{
+  text-align: center;
+  color: var(--branco);
+}
+section.feedback .box-comentarios{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  gap:2rem;
+}
+section.feedback .box-comentarios .comentario{ 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 380px;
+  padding: 24px 40px 45px 60px;
+  background:url('../img/bg-quote.png');
+  background-repeat: no-repeat;
+  background-size:100% 100% ;
+}
+section.feedback .box-comentarios .comentario .topo{
+  position: relative;
+}
+section.feedback .box-comentarios .comentario .topo::before{
+  content: "";
+  background-image: url("../img/sign-quotation-2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  top:7px;
+  left: -35px;
+} 
+section.feedback .box-comentarios .comentario .topo::after{
+  content: "";
+  background-image: url("../img/sign-quotation.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  bottom: -20px;
+  right: -10px;
+} 
+section.feedback .box-comentarios .comentario hr{
+  height: 1px;
+} 
+section.feedback .box-comentarios .comentario p.corpo{
+  font-size: 1.5rem;
+  line-height: 1;
+} 
 @media (max-width: 1400px) {
   .resolucao{
     background-color:yellowgreen;
