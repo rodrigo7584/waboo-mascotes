@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700;800&family=Poppins:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="resolucao"></div>
     <header>
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-between align-items-center">
           <a href="#">
             <img class="logo" src="./img/logo.png" alt="logo waboo" />
           </a>
@@ -38,7 +39,7 @@
       <section class="topo">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-xxl-5">
               <h1>Criação de Mascotes 2D e 3D</h1>
               <p>
                 Essa eficiente ferramenta de relacionamento não só fortalece a
@@ -52,6 +53,11 @@
               </p>
               <a href="#" class="btn-verde brilho-verde">Quero um Mascote</a>
             </div>
+            <div
+              class="col-xxl-7 d-flex justify-content-center align-items-end"
+            >
+              <img class="img-fluid" src="./img/rainbow-girl.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -61,8 +67,8 @@
             <div class="col-12">
               <h1>QUEM É A WABOO CREATIVE?</h1>
             </div>
-            <div class="row gap">
-              <div class="col-5">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center align-items-end">
                 <img class="img-fluid" src="./img/girl-world.png" alt="" />
               </div>
               <div class="col-7">
@@ -97,56 +103,56 @@
           <div class="row">
             <div class="col-12">
               <h1>Portifólio</h1>
-              <h2>
+              <p class="subtitulo">
                 Confira alguns projetos desenvolvidos <br />
                 pela nossa equipe de criaçao
-              </h2>
+              </p>
             </div>
             <div class="col box-cards">
               <div class="card">
                 <div class="imagem">
                   <img src="./img/3d-cartoon.png" alt="" />
                 </div>
-                <h3>3D Cartoon</h3>
+                <h2>3D Cartoon</h2>
               </div>
               <div class="card">
                 <div class="imagem">
                   <img src="./img/2d-render.png" alt="" />
                 </div>
-                <h3>2D Render</h3>
+                <h2>2D Render</h2>
               </div>
               <div class="card">
                 <div class="imagem">
                   <img src="./img/3d-custom.png" alt="" />
                 </div>
-                <h3>3D Estilizado</h3>
+                <h2>3D Estilizado</h2>
               </div>
               <div class="card">
                 <div class="imagem">
                   <img src="./img/2d-flat.png" alt="" />
                 </div>
-                <h3>2D Flat</h3>
+                <h2>2D Flat</h2>
               </div>
               <div class="card">
                 <div class="imagem">
                   <img src="./img/2d-render-2.png" alt="" />
                 </div>
-                <h3>2D Render</h3>
+                <h2>2D Render</h2>
               </div>
               <div class="card">
                 <div class="imagem">
                   <img src="./img/3d-realistic.png" alt="" />
                 </div>
-                <h3>3D Realismo</h3>
+                <h2>3D Realismo</h2>
               </div>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col">
-              <h4>
+              <p class="destaque">
                 Conheça melhor os nossos <br />
                 ultimos trabalhos
-              </h4>
+              </p>
               <div class="botoes">
                 <a href="#" class="btn-azul">Mascotes</a>
                 <a href="#" class="btn-borda-branca">Outros</a>
@@ -193,7 +199,6 @@
                     projeto e executou com maestria. Ficamos muito felizes.
                   </p>
                 </div>
-
                 <p class="cliente">- Ronnie Girard</p>
               </div>
             </div>
@@ -202,21 +207,30 @@
       </section>
       <section class="contato">
         <div class="container">
-          <div class="row">
-            <h1>Contato</h1>
-            <h2>
-              Conta pra gente um pouco da sua empresa e como deseja realizar a
-              criação do seu mascote
-            </h2>
-            <h2>Qualquer dúvida pode nos chamar no WhatsApp!</h2>
-            <div class="col">
-              <form action="#">
-                <input type="text" placeholder="seu nome" />
-                <input type="text" placeholder="telefone" />
-                <input type="text" placeholder="email" />
-                <textarea placeholder="mensagem"></textarea>
-                <button class="btn-verde">Enviar</button>
-              </form>
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h1>Contato</h1>
+              <p class="subtitulo">
+                Conta pra gente um pouco da sua empresa <br />
+                e como deseja realizar a criação do seu mascote
+              </p>
+              <p class="subtitulo">
+                Qualquer dúvida pode nos chamar no WhatsApp!
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <form action="#">
+                  <input type="text" placeholder="seu nome" />
+                  <input type="text" placeholder="telefone" />
+                  <input type="text" placeholder="email" />
+                  <textarea placeholder="mensagem"></textarea>
+                  <button class="btn-verde">Enviar</button>
+                </form>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <img src="./img/man-at-cloud.png" alt="" class="img-fluid" />
+              </div>
             </div>
           </div>
         </div>
@@ -224,10 +238,10 @@
       <section class="whatsapp">
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-6 d-flex justify-content-center">
               <img src="./img/hand-cellphone.png" alt="" />
             </div>
-            <div class="col">
+            <div class="col-6">
               <h1>
                 Chama no <br />
                 WhatsApp
@@ -241,7 +255,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-4">
             <a href="#">
               <img src="./img/logo.png" alt="" />
             </a>
@@ -250,12 +264,32 @@
               empresas mais modernas.
             </p>
           </div>
-          <div class="col">
+          <div class="col-4">
             <h1>Contato</h1>
-            <a href="maito:waboocreative@gmail.com">waboocreative@gmail.com</a>
-            <a href="tel:88998414763">(88) 9 9841-4763</a>
+            <ul class="menu-contato">
+              <li>
+                <a href="maito:waboocreative@gmail.com"
+                  ><img
+                    class="icone-link-contato"
+                    src="./img/icon-mail.png"
+                    alt=""
+                  />
+                  waboocreative@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:88998414763"
+                  ><img
+                    class="icone-contato"
+                    src="./img/icon-whats.png"
+                    alt=""
+                  />
+                  (88) 9 9841-4763</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="col">
+          <div class="col-4 d-flex flex-column align-items-end">
             <nav class="social-menu">
               <ul>
                 <li>
