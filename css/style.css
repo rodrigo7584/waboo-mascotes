@@ -101,6 +101,7 @@ header.ativo{
   background-color: var(--azul-escuro);
   transition: 0.5s ;
   padding: 1rem;
+  z-index: 10;
 }
 header .container .row{
   display: flex;
