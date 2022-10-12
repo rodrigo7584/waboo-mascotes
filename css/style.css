@@ -264,6 +264,15 @@ footer nav.social-menu ul {
 footer .copyright {
   text-align: right;
 }
+section.obrigado {
+  background: var(--verde-escuro);
+  background-image: url('../img/bg-balls.png');
+  background-repeat: repeat;
+  background-size: 100% auto;
+  animation: bubbles 60s linear 0s infinite;
+  text-align: center;
+  padding: 150px 0 2rem 0;
+}
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {

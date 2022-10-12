@@ -34,7 +34,7 @@
         </button>
         <nav class="menu-header">
           <ul>
-            <li><a href="#topo">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#quem-somos">Quem Somos</a></li>
             <li><a href="#portifolio">Portifólio</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -259,12 +259,27 @@
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <form action="#">
-                  <input type="text" placeholder="seu nome" />
-                  <input type="text" placeholder="telefone" />
-                  <input type="text" placeholder="email" />
-                  <textarea placeholder="mensagem"></textarea>
-                  <button class="btn-verde">Enviar</button>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                  <input
+                    type="hidden"
+                    name="accessKey"
+                    value="950a7de4-4400-4198-8ff8-74ce4219dd2e"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="Contato Mascotes"
+                  />
+                  <input
+                    type="hidden"
+                    name="redirectTo"
+                    value="https://waboo.com.br/mascotes/obrigado.html"
+                  />
+                  <input type="text" name="$nome" placeholder="seu nome" />
+                  <input type="text" name="$telefone" placeholder="telefone" />
+                  <input type="text" name="email" placeholder="email" />
+                  <textarea name="$mensagem" placeholder="mensagem"></textarea>
+                  <button type="submit" class="btn-verde">Enviar</button>
                 </form>
               </div>
               <div
