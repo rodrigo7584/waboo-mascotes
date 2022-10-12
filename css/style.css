@@ -56,12 +56,12 @@ section.quem-somos .btn-verde {
   margin-bottom: 5rem;
 }
 section.portfolio {
+  padding: 5rem 0;
   background: var(--verde-escuro);
   background-image: url('../img/bg-balls.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat;
   background-size: 100% auto;
-  padding: 5rem 0;
+  animation: bubbles 60s linear 0s infinite;
 }
 section.portfolio h1,
 section.portfolio h2 {
@@ -79,13 +79,13 @@ section.portfolio .box-cards {
   justify-content: center;
   gap: 5rem 3rem;
 }
-section.portfolio .box-cards .card {
+section.portfolio .box-cards .card-char {
   display: grid;
 }
-section.portfolio .box-cards .card h3 {
+section.portfolio .box-cards .card-char h3 {
   font-size: 2.5rem;
 }
-section.portfolio .box-cards .card .imagem {
+section.portfolio .box-cards .card-char .imagem {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
@@ -97,7 +97,7 @@ section.portfolio .box-cards .card .imagem {
   background: linear-gradient(180deg, var(--branco), var(--cinza));
   margin-bottom: 1rem;
 }
-section.portfolio .box-cards .card .imagem img {
+section.portfolio .box-cards .card-char .imagem img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -206,9 +206,17 @@ section.whatsapp {
   padding-top: 5rem;
   background-color: var(--verde-escuro);
   background-image: url('../img/bg-balls.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat;
   background-size: 100% auto;
+  animation: bubbles 60s linear 0s infinite;
+}
+@keyframes bubbles {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 1400px;
+  }
 }
 section.whatsapp h1 {
   font-weight: 800;
@@ -231,6 +239,9 @@ footer {
 footer h1 {
   font-size: 2rem;
   margin-bottom: 0.3rem;
+}
+footer .logo img {
+  margin-bottom: 1rem;
 }
 footer p,
 footer a {
@@ -263,7 +274,7 @@ footer .copyright {
   }
   header nav.menu-header {
     position: absolute;
-    top: 98px;
+    top: 96px;
     left: 0;
     width: 100%;
     background-color: var(--azul-escuro);
@@ -272,7 +283,7 @@ footer .copyright {
     overflow: hidden;
   }
   header.ativo nav.menu-header {
-    top: 78px;
+    top: 76px;
   }
   header nav.menu-header ul {
     flex-direction: column;
@@ -289,13 +300,63 @@ footer .copyright {
   header nav.menu-header.active ul {
     opacity: 1;
   }
+  section.portfolio .box-cards {
+    margin: 2rem 5rem;
+  }
   section.feedback .box-comentarios .comentario {
     width: 360px;
   }
+  section.whatsapp {
+    text-align: center;
+  }
+  footer .logo {
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
+  section.portfolio .box-cards .card-char .imagem {
+    width: 250px;
+    height: 280px;
+  }
+  section.portfolio .botoes {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  footer,
+  footer .copyright {
+    text-align: center;
+  }
+  footer ul {
+    width: fit-content;
+    margin: 1rem auto;
+  }
 }
 @media (max-width: 576px) {
+  section.quem-somos h1 {
+    margin-bottom: 2rem;
+  }
+  section.quem-somos {
+    text-align: right;
+  }
+  section.portfolio .box-cards {
+    gap: 0;
+  }
+  section.portfolio p.destaque {
+    font-size: 2.5rem;
+  }
+  section.feedback .box-comentarios {
+    margin-top: 2rem;
+  }
+  section.whatsapp h1 {
+    font-size: 4rem;
+  }
+  section.contato form input,
+  section.contato form textarea {
+    font-size: 1.9rem;
+  }
+  section.whatsapp .btn-azul {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 400px) {
 }
