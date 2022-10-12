@@ -5,41 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waboo Mascotes</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="resolucao"></div>
+    <!-- <div class="resolucao"></div> -->
     <header>
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <a href="#">
-            <img class="logo" src="./img/logo.png" alt="logo waboo" />
-          </a>
-          <button class="btn-mobile-menu"></button>
-          <nav class="menu-header">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Quem Somos</a></li>
-              <li><a href="#">Portifólio</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a class="btn-verde" href="#">Quero um Mascote</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#topo">
+          <img class="logo" src="./img/logo.png" alt="logo waboo" />
+        </a>
+        <button class="btn-mobile-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <nav class="menu-header">
+          <ul>
+            <li><a href="#topo">Home</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <a
+                class="btn-verde"
+                target="_blank"
+                href="https://wa.me/5588998414763?text=Quero%20um%20mascote"
+                >Quero um Mascote</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <section class="topo">
+      <section class="topo" id="topo">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-5">
+            <div class="col-lg-6 col-xxl-5">
               <h1>Criação de Mascotes 2D e 3D</h1>
               <p>
                 Essa eficiente ferramenta de relacionamento não só fortalece a
@@ -51,27 +66,36 @@
                 , que criam laços com as pessoas e popularizam os produtos,
                 impactanto de forma positiva também as vendas
               </p>
-              <a href="#" class="btn-verde brilho-verde">Quero um Mascote</a>
+              <a
+                target="_blank"
+                href="https://wa.me/5588998414763?text=Quero%20um%20mascote"
+                class="btn-verde brilho-verde"
+                >Quero um Mascote</a
+              >
             </div>
             <div
-              class="col-xxl-7 d-flex justify-content-center align-items-end"
+              class="col-lg-6 col-xxl-7 d-flex justify-content-center align-items-end"
+              data-aos="fade-down"
             >
               <img class="img-fluid" src="./img/rainbow-girl.png" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="quem-somos">
+      <section class="quem-somos" id="quem-somos">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1>QUEM É A WABOO CREATIVE?</h1>
             </div>
             <div class="row">
-              <div class="col-5 d-flex justify-content-center align-items-end">
+              <div
+                class="col-lg-5 order-2 order-lg-1 d-flex justify-content-center align-items-end"
+                data-aos="fade-down"
+              >
                 <img class="img-fluid" src="./img/girl-world.png" alt="" />
               </div>
-              <div class="col-7">
+              <div class="col-lg-7 order-1 order-lg-2">
                 <p>
                   Somos uma agência de
                   <strong>marketing e tecnologia</strong> que busca ajudar nosso
@@ -92,14 +116,19 @@
                     >desenvolvemos sites, sistemas e aplicativos.</strong
                   >
                 </p>
-                <a href="#" class="btn-verde">Quero um Mascote</a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/5588998414763?text=Quero%20um%20mascote"
+                  class="btn-verde"
+                  >Quero um Mascote</a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="portfolio">
-        <div class="container">
+      <section class="portfolio" id="portifolio">
+        <div class="container-xl">
           <div class="row">
             <div class="col-12">
               <h1>Portifólio</h1>
@@ -109,37 +138,37 @@
               </p>
             </div>
             <div class="col box-cards">
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/3d-cartoon.png" alt="" />
                 </div>
                 <h2>3D Cartoon</h2>
               </div>
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/2d-render.png" alt="" />
                 </div>
                 <h2>2D Render</h2>
               </div>
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/3d-custom.png" alt="" />
                 </div>
                 <h2>3D Estilizado</h2>
               </div>
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/2d-flat.png" alt="" />
                 </div>
                 <h2>2D Flat</h2>
               </div>
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/2d-render-2.png" alt="" />
                 </div>
                 <h2>2D Render</h2>
               </div>
-              <div class="card">
+              <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/3d-realistic.png" alt="" />
                 </div>
@@ -154,21 +183,31 @@
                 ultimos trabalhos
               </p>
               <div class="botoes">
-                <a href="#" class="btn-azul">Mascotes</a>
-                <a href="#" class="btn-borda-branca">Outros</a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/5588998414763?text=Quero%20um%20mascote"
+                  class="btn-azul"
+                  >Mascotes</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.behance.net/waboocreative"
+                  class="btn-borda-branca"
+                  >Outros</a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="feedback">
-        <div class="container">
+      <section class="feedback" id="feedback">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-12">
               <h1>FEEDBACK DOS NOSSOS CLIENTES</h1>
             </div>
             <div class="col box-comentarios">
-              <div class="comentario">
+              <div class="comentario" data-aos="zoom-in">
                 <div class="topo">
                   <p class="titulo">Excedeu minha expectativa...</p>
                   <hr />
@@ -179,7 +218,7 @@
                 </div>
                 <p class="cliente">- Charles Bezerra</p>
               </div>
-              <div class="comentario">
+              <div class="comentario" data-aos="zoom-in">
                 <div class="topo">
                   <p class="titulo">Recomendo a Waboo e toda sua equipe...</p>
                   <hr />
@@ -189,7 +228,7 @@
                 </div>
                 <p class="cliente">- Diego Costa</p>
               </div>
-              <div class="comentario">
+              <div class="comentario" data-aos="zoom-in">
                 <div class="topo">
                   <p class="titulo">Fiquei impressionado...</p>
                   <hr />
@@ -205,21 +244,21 @@
           </div>
         </div>
       </section>
-      <section class="contato">
+      <section class="contato" id="contato">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-md-11 col-lg-8 col-xl-7">
               <h1>Contato</h1>
               <p class="subtitulo">
-                Conta pra gente um pouco da sua empresa <br />
-                e como deseja realizar a criação do seu mascote
+                Conta pra gente um pouco da sua empresa e como deseja realizar a
+                criação do seu mascote
               </p>
               <p class="subtitulo">
                 Qualquer dúvida pode nos chamar no WhatsApp!
               </p>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-lg-6">
                 <form action="#">
                   <input type="text" placeholder="seu nome" />
                   <input type="text" placeholder="telefone" />
@@ -228,25 +267,36 @@
                   <button class="btn-verde">Enviar</button>
                 </form>
               </div>
-              <div class="col-6 d-flex justify-content-center">
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-end"
+                data-aos="fade-down"
+              >
                 <img src="./img/man-at-cloud.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="whatsapp">
+      <section class="whatsapp" id="whatsapp">
         <div class="container">
           <div class="row">
-            <div class="col-6 d-flex justify-content-center">
-              <img src="./img/hand-cellphone.png" alt="" />
+            <div
+              class="col-lg-5 col-xl-6 order-2 order-lg-1 d-flex justify-content-center align-items-end"
+              data-aos="fade-down"
+            >
+              <img class="img-fluid" src="./img/hand-cellphone.png" alt="" />
             </div>
-            <div class="col-6">
+            <div class="col-lg-7 col-xl-6 order-1 order-lg-2">
               <h1>
                 Chama no <br />
                 WhatsApp
               </h1>
-              <a href="#" class="btn-azul">Quero um mascote</a>
+              <a
+                target="_blank"
+                href="https://wa.me/5588998414763?text=Quero%20um%20mascote"
+                class="btn-azul"
+                >Quero um mascote</a
+              >
             </div>
           </div>
         </div>
@@ -254,9 +304,9 @@
     </main>
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <a href="#">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 logo">
+            <a href="#topo">
               <img src="./img/logo.png" alt="" />
             </a>
             <p>
@@ -264,11 +314,11 @@
               empresas mais modernas.
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4 contato">
             <h1>Contato</h1>
             <ul class="menu-contato">
               <li>
-                <a href="maito:waboocreative@gmail.com"
+                <a target="_blank" href="mailto:waboocreative@gmail.com"
                   ><img
                     class="icone-link-contato"
                     src="./img/icon-mail.png"
@@ -289,17 +339,31 @@
               </li>
             </ul>
           </div>
-          <div class="col-4 d-flex flex-column align-items-end">
+          <div
+            class="col-md-6 col-lg-4 d-flex flex-column align-items-md-end copyright"
+          >
             <nav class="social-menu">
               <ul>
                 <li>
-                  <a href="#"><img src="./img/icon-face.png" alt="" /></a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/waboocreative/"
+                    ><img src="./img/icon-face.png" alt=""
+                  /></a>
                 </li>
                 <li>
-                  <a href="#"><img src="./img/icon-insta.png" alt="" /></a>
+                  <a
+                    target="_blank"
+                    href="https://instagram.com/waboocreative?igshid=YmMyMTA2M2Y="
+                    ><img src="./img/icon-insta.png" alt=""
+                  /></a>
                 </li>
                 <li>
-                  <a href="#"><img src="./img/icon-linkedin.png" alt="" /></a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/waboo-creative/"
+                    ><img src="./img/icon-linkedin.png" alt=""
+                  /></a>
                 </li>
               </ul>
             </nav>
@@ -308,6 +372,12 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/script.js"></script>
+    <script>
+      AOS.init({
+        delay: 100
+      })
+    </script>
   </body>
 </html>

@@ -6,3 +6,13 @@ document.addEventListener('scroll', () => {
     header.classList.remove('ativo')
   }
 })
+
+const btnMobile = document.querySelector('header .btn-mobile-menu')
+const menu = document.querySelector('header nav.menu-header')
+
+if (btnMobile) {
+  btnMobile.addEventListener('click', () => {
+    btnMobile.classList.toggle('active')
+    menu.classList.toggle('active')
+  })
+}

@@ -2,12 +2,12 @@ header {
   position: fixed;
   width: 100%;
   padding: 3rem 0 1rem 0;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   z-index: 10;
 }
 header.ativo {
   background-color: var(--azul-escuro);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   padding: 1rem 0;
 }
 header nav.menu-header ul {
@@ -220,6 +220,7 @@ section.whatsapp h1 {
 section.whatsapp .btn-azul {
   font-size: 3.2rem;
   padding: 1.5rem 5rem;
+  margin-bottom: 5rem;
 }
 footer {
   padding: 3rem 0;
@@ -249,33 +250,52 @@ footer nav.social-menu ul {
   display: flex;
   gap: 1.5rem;
 }
+footer .copyright {
+  text-align: right;
+}
 @media (max-width: 1400px) {
-  .resolucao {
-    background-color: yellowgreen;
-  }
 }
 @media (max-width: 1200px) {
-  .resolucao {
-    background-color: violet;
-  }
 }
 @media (max-width: 992px) {
-  .resolucao {
-    background-color: crimson;
+  header .btn-mobile-menu {
+    display: flex;
+  }
+  header nav.menu-header {
+    position: absolute;
+    top: 98px;
+    left: 0;
+    width: 100%;
+    background-color: var(--azul-escuro);
+    height: 0px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  header.ativo nav.menu-header {
+    top: 78px;
+  }
+  header nav.menu-header ul {
+    flex-direction: column;
+    margin: 5rem 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  header nav.menu-header ul li {
+    text-align: center;
+  }
+  header nav.menu-header.active {
+    height: calc(100vh - 70px);
+  }
+  header nav.menu-header.active ul {
+    opacity: 1;
+  }
+  section.feedback .box-comentarios .comentario {
+    width: 360px;
   }
 }
 @media (max-width: 768px) {
-  .resolucao {
-    background-color: black;
-  }
 }
 @media (max-width: 576px) {
-  .resolucao {
-    background-color: white;
-  }
 }
 @media (max-width: 400px) {
-  .resolucao {
-    background-color: orange;
-  }
 }
