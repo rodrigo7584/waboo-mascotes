@@ -99,7 +99,29 @@ section.portfolio .box-cards .card-char .imagem {
   background: linear-gradient(180deg, var(--branco), var(--cinza));
   margin-bottom: 1rem;
 }
-section.portfolio .box-cards .card-char .imagem img {
+.card-char .imagem img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-char {
+  display: grid;
+}
+.card-char h3 {
+  font-size: 2.5rem;
+}
+.card-char .imagem {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 330px;
+  border: 5px solid var(--branco);
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(180deg, var(--branco), var(--cinza));
+  margin-bottom: 1rem;
+}
+.card-char .imagem img {
   max-width: 100%;
   max-height: 100%;
 }

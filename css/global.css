@@ -232,3 +232,25 @@ button.btn-mobile-menu.active div:last-child {
     filter: drop-shadow(0px 0px 5px var(--azul));
   }
 }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper {
+  padding: 4rem;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--azul-escuro);
+  font-weight: 900;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  color: var(--azul);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  color: var(--azul-escuro);
+  opacity: 1;
+}

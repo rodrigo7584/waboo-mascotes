@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -156,7 +160,68 @@
                 pela nossa equipe de criação.
               </p>
             </div>
-            <div class="col box-cards">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/3d-cartoon.png" alt="" />
+                    </div>
+                    <h2>3D Cartoon</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/2d-render.png" alt="" />
+                    </div>
+                    <h2>2D Render</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/3d-custom.png" alt="" />
+                    </div>
+                    <h2>3D Estilizado</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/JJRender2.png" alt="" />
+                    </div>
+                    <h2>3D Estilizado</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/2d-render-2.png" alt="" />
+                    </div>
+                    <h2>2D Render</h2>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-char">
+                    <div class="imagem">
+                      <img src="./img/3d-realistic.png" alt="" />
+                    </div>
+                    <h2>3D Realismo</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- <div class="col box-cards">
               <div class="card-char" data-aos="flip-left">
                 <div class="imagem">
                   <img src="./img/3d-cartoon.png" alt="" />
@@ -193,7 +258,7 @@
                 </div>
                 <h2>3D Realismo</h2>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row justify-content-center">
             <div class="col">
@@ -406,6 +471,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/script.js"></script>
     <script>
