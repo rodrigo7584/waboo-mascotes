@@ -140,8 +140,10 @@ p.destaque {
 }
 .btn-azul {
   background: linear-gradient(90deg, var(--azul), var(--azul-escuro));
+  padding: 0.5rem 2rem;
   border-radius: 5rem;
   font-weight: 800;
+  color: var(--branco);
 }
 button.btn-mobile-menu {
   display: none;
@@ -206,5 +208,27 @@ button.btn-mobile-menu.active div:last-child {
 @media (max-width: 400px) {
   .resolucao {
     background-color: orange;
+  }
+}
+.pulsarVerde {
+  animation: pulsarVerde 1s ease-in-out alternate infinite;
+}
+@keyframes pulsarVerde {
+  0% {
+    filter: drop-shadow(0px 0px 10px var(--verde));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 5px var(--verde));
+  }
+}
+.pulsarAzul {
+  animation: pulsarAzul 1s ease-in-out alternate infinite;
+}
+@keyframes pulsarAzul {
+  0% {
+    filter: drop-shadow(0px 0px 10px var(--azul));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 5px var(--azul));
   }
 }

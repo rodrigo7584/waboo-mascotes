@@ -1,3 +1,8 @@
+.btn-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 header {
   position: fixed;
   width: 100%;
@@ -51,9 +56,6 @@ section.quem-somos h1 {
 }
 section.quem-somos p {
   margin-bottom: 4rem;
-}
-section.quem-somos .btn-verde {
-  margin-bottom: 5rem;
 }
 section.portfolio {
   padding: 5rem 0;
