@@ -27,6 +27,9 @@ const swiper = new Swiper('.swiper', {
     clickable: true
   },
   breakpoints: {
+    360: {
+      spaceBetween: 50
+    },
     576: {
       slidesPerView: 1,
       spaceBetween: 10
